@@ -1,0 +1,15 @@
+#main-menu,
+#block-cookieinfo,
+#block-podminkyuziti,
+#breadcrumbs,
+#formular,
+.slick-dots,
+.view-slider-progress .slider-progress,
+.button {
+    display: none !important;
+}
+
+a:after {
+    content: "(" attr(href)")";
+    display: none !important;
+}
