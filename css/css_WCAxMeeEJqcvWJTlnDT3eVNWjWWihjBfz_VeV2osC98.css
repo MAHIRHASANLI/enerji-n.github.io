@@ -17763,7 +17763,7 @@ ul.breadcrumb li a:focus {
 }
 
 #logo {
-  max-width: 180px;
+  /* max-width: 200px; */
   float: left;
   padding: 15px 0;
 }
@@ -17773,12 +17773,26 @@ ul.breadcrumb li a:focus {
   max-width: 100%;
   height: auto;
 }
+#logo-title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  font-size: 30px;
+  color: #e0b93b;
+  font-weight: 700;
+  font-family: sans-serif;
+}
 
 @media (max-width: 767px) {
   #logo {
-    max-width: 140px;
+    /* max-width: 140px; */
     margin: 10px 0;
     padding: 0;
+  }
+
+  #logo-title {
+    font-size: 20px;
   }
 }
 
