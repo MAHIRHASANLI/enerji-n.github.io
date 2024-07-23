@@ -17782,6 +17782,9 @@ ul.breadcrumb li a:focus {
   color: #e0b93b;
   font-weight: 700;
   font-family: sans-serif;
+  font-family: "PT Serif", serif;
+  font-weight: 500;
+  font-style: normal;
 }
 
 @media (max-width: 767px) {
