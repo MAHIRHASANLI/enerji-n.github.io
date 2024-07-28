@@ -32,7 +32,7 @@ body {
   position: fixed;
   right: 30px;
   bottom: 30px;
-  z-index: 1000;
+  z-index: 100;
 }
 
 .whatsapp-button a img {
@@ -55,6 +55,11 @@ a:hover {
   width: 100%;
   margin: 0 auto;
   padding: 0 1.875em 3.125em 1.875em;
+  right: 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 99999;
 }
 
 .main {
@@ -12484,7 +12489,15 @@ body.navbar-is-fixed-bottom {
   }
 }
 
+.main-section {
+  margin-top: 100px;
+}
+
 @media screen and (max-width: 767px) {
+  .main-section {
+    margin-top: 70px;
+  }
+
   body.toolbar-vertical.navbar-is-fixed-top .toolbar-bar,
   body.toolbar-vertical.navbar-is-fixed-bottom .toolbar-bar {
     position: fixed;
@@ -17671,8 +17684,13 @@ ul.breadcrumb li a:focus {
 
 .header {
   background-color: #1f2750;
-  box-shadow: 0 0 4px #d1d1d1;
-  padding: 20px 0;
+  box-shadow: 0 0 7px rgba(0, 0, 0, 0.5);
+  padding: 5px 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 9999;
 }
 
 .header .container {
@@ -17682,6 +17700,9 @@ ul.breadcrumb li a:focus {
 @media (max-width: 767px) {
   .header .container {
     padding-right: 0;
+  }
+  .header {
+    padding: 0px;
   }
 }
 
@@ -17785,6 +17806,7 @@ ul.breadcrumb li a:focus {
   font-family: "PT Serif", serif;
   font-weight: 500;
   font-style: normal;
+  text-decoration: none;
 }
 
 @media (max-width: 767px) {
@@ -23934,8 +23956,9 @@ ul.js-pager__items li:before {
   position: relative;
   background-position: center;
   background-size: cover;
-  padding: 80px 0;
-  min-height: 80vh !important;
+  display: flex;
+  align-items: center;
+  min-height: 100vh !important;
 }
 
 @media (max-width: 767px) {
